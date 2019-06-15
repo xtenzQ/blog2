@@ -11,7 +11,7 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
 
-plugins:             [jekyll-paginate]
+plugins:             [jekyll-paginate-v2]
 
 markdown:            kramdown
 highlighter:         rouge
@@ -23,3 +23,5 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed
+
+permalink: /:year/:month/:title.html
