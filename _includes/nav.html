@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand offset-md-2" href="{{ "/" | relative_url }}">
+            <!-- Logo -->
+            <img id="logo" src="{{ "/img/rocket.png" | relative_url }}" alt="Rocket logo" />
+            <span class="text-uppercase">Nikita Rusetskii</span> / <span style="font-size: 14px;">Blog</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavBar" aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavBar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    {% if title != 'Archive' %}
+                    <a class="nav-link active" href="{{ "/" | relative_url }}">Latest</a>
+                    {% else %}
+                    <a class="nav-link" href="{{ "/" | relative_url }}">Latest</a>
+                    {% endif %}
+                </li>
+                <li class="nav-item">
+                    {% if title == 'Archive' %}
+                    <a class="nav-link active">Archive</a>
+                    {% else %}
+                    <a class="nav-link">Archive</a>
+                    {% endif %}
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://xtenzq.github.io/">About me</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

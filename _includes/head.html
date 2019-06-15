@@ -1,0 +1,34 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% assign title = page.title | default: site.title | escape %}
+    {% assign canonical = page.url | replace:'index.html','' | absolute_url %}
+    {% assign description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | escape %}
+    
+    <meta name="description" content="{{ description }}">
+    {% if page.keywords %}
+        {% if page.keywords.first %}
+        {% assign keywords = page.keywords | join: ',' %}
+        {% else %}
+        {% assign keywords = page.keywords %}
+        {% endif %}
+        <meta name="keywords" content="{{ keywords }}">
+    {% endif %}
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ "/img/favicon.ico" | relative_url }}" type="image/png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />      
+    <!-- FontAwesome script -->
+    <script src="https://kit.fontawesome.com/82aef158e1.js"></script>
+    <!-- MathJax Plugin -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!-- Main CSS style -->
+    <link rel="stylesheet" type="text/css" href="{{ "/css/styles.css" | relative_url }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    
+    <title>{{ title }}</title>
+</head>
