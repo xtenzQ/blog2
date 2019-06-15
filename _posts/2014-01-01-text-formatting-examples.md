@@ -2,8 +2,6 @@
 layout: post
 title: "Text Formatting Examples"
 author: "Nikita Rusetskii"
-categories: journal
-tags: [documentation,sample]
 ---
 
 # Markdown Support
