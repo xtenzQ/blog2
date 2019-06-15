@@ -2,8 +2,6 @@
 layout: post
 title: "Metaballs 2D"
 author: "Nikita Rusetskii"
-categories: journal
-tags: [documentation,sample]
 ---
 
 ## Contents
