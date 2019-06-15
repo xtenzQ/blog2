@@ -11,7 +11,7 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
 
-plugins:             [jekyll-paginate-v2]
+plugins:             [jekyll-paginate]
 
 markdown:            kramdown
 highlighter:         rouge
