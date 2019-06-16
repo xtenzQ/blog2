@@ -25,6 +25,13 @@
                     {% endif %}
                 </li>
                 <li class="nav-item">
+                    {% if title == 'Tag' %}
+                    <a class="nav-link active" href="{{ "blog/tags/" | relative_url }}">Tag</a>
+                    {% else %}
+                    <a class="nav-link" href="{{ "blog/tags/" | relative_url }}">Tag</a>
+                    {% endif %}
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="https://xtenzq.github.io/">About me</a>
                 </li>
             </ul>

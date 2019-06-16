@@ -3,6 +3,8 @@ layout: post
 title: "Text Formatting Examples"
 date: 2016-11-20 19:16:49 +0100
 author: "Nikita Rusetskii"
+category: Dev
+tags: [web, jekyll]
 ---
 
 # Markdown Support
