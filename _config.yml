@@ -2,8 +2,6 @@ title: 'Nikita Rusetskii blog'
 description: 'Nikita Rusetskii blog'
 author: 'Nikita Rusetskii'
 
-baseurl: 'xtenzq.github.io'
-
 pagination:
   enabled: true
   debug: false
