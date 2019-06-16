@@ -2,9 +2,11 @@ title: 'Nikita Rusetskii blog'
 description: 'Nikita Rusetskii blog'
 author: 'Nikita Rusetskii'
 
+baseurl: 'xtenzq.github.io'
+
 pagination:
   enabled: true
-  debug: true
+  debug: false
   per_page: 5
   permalink: '/page/:num/'
   title: ':title - page :num of :max'
@@ -24,3 +26,6 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed
+
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
