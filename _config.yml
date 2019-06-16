@@ -25,5 +25,5 @@ sass:
   sass_dir: _sass
   style: compressed
 
-tag_page: 'tags/'
-category_page: 'categories/'
+tag_page: '/tags/'
+category_page: '/categories/'
